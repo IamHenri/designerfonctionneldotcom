@@ -15,6 +15,6 @@ linkedin_username:  h3nr1
 
 # Google-analytics
 google-analytics:
-  id: "364813381"
+  id: "G-1SK9N18GL6"
 
 exclude: ['package.json', 'src' , 'node_modules']

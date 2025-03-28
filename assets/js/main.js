@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     particlesJS("particles-js", { 
         particles: { 
             number: { 
-                value: 100, // Augmente le nombre de particules
+                value: 20, // Réduction du nombre de particules
                 density: { enable: true, value_area: 800 } 
             }, 
             color: { value: "#ffffff" }, 
@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 
             line_linked: { 
                 enable: true, 
-                distance: 70, // Réduit la distance pour limiter les connexions
+                distance: 100, // Ajusté pour éviter trop de connexions
                 color: "#ffffff", 
                 opacity: 0.4, 
                 width: 1 
             }, 
             move: { 
                 enable: true, 
-                speed: 2, // Vitesse un peu plus basse
+                speed: 2, // Vitesse fluide
                 direction: "none", 
                 random: true, 
                 straight: false, 
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 grab: { distance: 150, line_linked: { opacity: 1 } }, 
                 bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, 
                 repulse: { distance: 200, duration: 0.4 }, 
-                push: { particles_nb: 4 }, 
-                remove: { particles_nb: 2 } 
+                push: { particles_nb: 2 }, 
+                remove: { particles_nb: 1 } 
             } 
         }, 
         retina_detect: true 

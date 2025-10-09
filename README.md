@@ -4,7 +4,7 @@ Adaptation libre d'un thème existant.
 
 https://iamhenri.github.io/designerfonctionneldotcom/
 
-URL officielle : designerfonctionnel.com
+URL officielle : https://designerfonctionnel.com
 
 icônes : https://devicon.dev/
 # Particle Jekyll Theme

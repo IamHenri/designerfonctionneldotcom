@@ -1,3 +1,103 @@
-<div class="tech">
-    <h2>Mentions Légales</h2>
-  </div>
+
+<h1>Mentions légales</h1>
+
+<section>
+  <h2>Éditeur du site</h2>
+  <p id="editor" class="masked">
+    Chargement des informations…
+  </p>
+</section>
+
+<section>
+  <h2>Activité</h2>
+  <p>
+    Le présent site a pour objet la présentation d’activités de
+    <strong>prestations de services informatiques</strong>, comprenant notamment :
+  </p>
+  <ul>
+    <li>AMOA (Assistance à Maîtrise d’Ouvrage)</li>
+    <li>Webmastering et maintenance de sites</li>
+    <li>Conception et développement d’outils numériques ad hoc</li>
+    <li>Formations et accompagnement aux outils numériques</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Assurance professionnelle</h2>
+  <p id="insurance" class="masked">
+    Chargement des informations…
+  </p>
+</section>
+
+<section>
+  <h2>Responsabilité</h2>
+  <p>
+    L’éditeur s’efforce de fournir des informations exactes et à jour.
+    Toutefois, il ne saurait être tenu responsable des erreurs ou omissions,
+    ni de l’utilisation faite des informations diffusées.
+  </p>
+</section>
+
+<section>
+  <h2>Propriété intellectuelle</h2>
+  <p>
+    L’ensemble du contenu du site est protégé par le droit de la propriété intellectuelle.
+    Toute reproduction ou représentation, totale ou partielle, est interdite sans autorisation préalable.
+  </p>
+</section>
+
+<section>
+  <h2>Données personnelles</h2>
+  <p>
+    Le site ne collecte aucune donnée personnelle sans l’accord explicite de l’utilisateur.
+    Aucun traitement automatisé n’est effectué à des fins commerciales ou de profilage.
+  </p>
+</section>
+
+<section>
+  <h2>Droit applicable</h2>
+  <p>
+    Les présentes mentions légales sont soumises au droit français.
+  </p>
+</section>
+
+<script>
+/*
+  Obfuscation volontairement simple et lisible.
+  Les données ne sont jamais présentes en clair dans le HTML.
+*/
+
+(function () {
+
+  function decode(arr) {
+    return arr.map(function (c) {
+      return String.fromCharCode(c);
+    }).join('');
+  }
+
+  // === Données obfusquées ===
+
+  var editorData = {
+    name: [69,85,82,76,32,45,32,80,114,101,115,116,97,116,105,111,110,115,32,105,110,102,111,114,109,97,116,105,113,117,101,115],
+    siret: [83,73,82,69,84,32,58,32,91,224,32,99,111,109,112,108,233,116,101,114,93],
+    contact: [67,111,110,116,97,99,116,32,58,32,112,97,114,32,102,111,114,109,117,108,97,105,114,101,32,100,101,32,99,111,110,116,97,99,116]
+  };
+
+  var insuranceData = [
+    65,115,115,117,114,97,110,99,101,32,100,101,32,114,101,115,112,111,110,115,97,98,105,108,105,116,233,32,112,114,111,102,101,115,115,105,111,110,110,101,108,108,101,
+    32,99,111,117,118,114,97,110,116,32,108,101,115,32,105,110,116,101,114,118,101,110,116,105,111,110,115,32,101,110,32,99,114,233,97,116,105,111,110,
+    44,32,99,111,110,115,101,105,108,32,101,116,32,102,111,114,109,97,116,105,111,110,46
+  ];
+
+  // === Injection dynamique ===
+
+  document.getElementById('editor').innerHTML =
+    decode(editorData.name) + '<br>' +
+    decode(editorData.siret) + '<br>' +
+    decode(editorData.contact);
+
+  document.getElementById('insurance').textContent =
+    decode(insuranceData);
+
+})();
+</script>

@@ -9,4 +9,248 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 <!-- -->
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<style>
+  #pricing {
+  padding: 80px 20px;
+  background: #1a222c;
+}
+
+#pricing .pricing-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#pricing .section-title {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#pricing .section-subtitle {
+  text-align: center;
+  color: #4B5664;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+#pricing .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+#pricing .pricing-card {
+  background: #212c38;
+  border: 1px solid #2e3d4e;
+  border-radius: 8px;
+  padding: 28px 18px;
+  text-align: center;
+}
+
+#pricing .pricing-card .offer-name {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #4B5664;
+  margin-bottom: 12px;
+}
+
+#pricing .pricing-card .price {
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+#pricing .pricing-card .price span {
+  font-size: 18px;
+  font-weight: 300;
+  color: #4B5664;
+}
+
+#pricing .pricing-card .tagline {
+  font-size: 13px;
+  color: #4B5664;
+  margin: 10px 0 20px;
+  line-height: 1.5;
+  min-height: 40px;
+}
+
+#pricing .pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  text-align: left;
+}
+
+#pricing .pricing-card ul li {
+  font-size: 13px;
+  color: #c0c8d0;
+  padding: 7px 0;
+  border-bottom: 1px solid #2e3d4e;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+#pricing .pricing-card ul li::before {
+  content: "–";
+  color: #54516A;
+  flex-shrink: 0;
+}
+
+#pricing .pricing-card .cta-btn {
+  display: block;
+  padding: 10px 0;
+  border: 1px solid #2e3d4e;
+  border-radius: 4px;
+  color: #4B5664;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+#pricing .pricing-card .cta-btn:hover {
+  border-color: #54516A;
+  color: #fff;
+}
+
+#pricing .pricing-card.featured {
+  background: #1e2a38;
+  border: 2px solid #54516A;
+  padding: 40px 18px;
+  margin-top: -14px;
+}
+
+#pricing .pricing-card.featured .offer-name {
+  color: #54516A;
+}
+
+#pricing .pricing-card.featured .badge {
+  display: inline-block;
+  background: #54516A;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+#pricing .pricing-card .badge {
+  display: none;
+}
+
+#pricing .pricing-card.featured ul li::before {
+  color: #54516A;
+}
+
+#pricing .pricing-card.featured .cta-btn {
+  border-color: #54516A;
+  color: #54516A;
+  font-weight: 600;
+}
+
+#pricing .pricing-card.featured .cta-btn:hover {
+  background: #54516A;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  #pricing .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #pricing .pricing-card.featured {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  #pricing .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== Section Contact ===== */
+#contact {
+  padding: 60px 0;
+  background-color: #141414;
+  color: #fff;
+}
+
+#contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contact .col-lg-3,
+#contact .col-md-3,
+#contact .col-sm-6 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  #contact .col-lg-3,
+  #contact .col-md-3,
+  #contact .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  #contact .col-lg-3,
+  #contact .col-md-3,
+  #contact .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+#contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #64b5f6;
+}
+
+#contact .fa {
+  display: block;
+  color: #fff;
+  margin: 0 auto 10px;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover .fa {
+  color: #1b28e6;
+}
+
+#contact p,
+#contact #phone {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+</style>
 </head>
